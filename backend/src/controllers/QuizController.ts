@@ -30,7 +30,6 @@ export default class QuizController {
   async indexOne(request: Request, response: Response) {
     try {
       const { id } = request.params;
-      console.log(id);
       const quizRepository = getRepository(Quiz);
 
       const quiz = await quizRepository.findOne({

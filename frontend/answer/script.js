@@ -22,12 +22,13 @@ window.onload = async () => {
   });
 
   const parsedResponse = await response.json();
-
+  const saveBtn = document.getElementById("save-btn");
   const { questions } = parsedResponse;
 
   if (!questions.length) {
     const answerMessage = document.getElementById("answer-message");
     answerMessage.innerHTML = "Ainda não foram cadastradas perguntas neste questionário!";
+    saveBtn.style.display = "none";
   }
 
   questions.forEach(q => createQuestion(q));
@@ -37,7 +38,6 @@ const formQuiz = document.getElementById("form-quiz");
 
 formQuiz.onsubmit = (e) => {
   e.preventDefault();
-  console.log(e);
   const inputs = document.getElementsByTagName("input");
   Array.from(inputs).forEach(async (x) => {
     const response = await fetch("http://localhost:3333/answers", {
