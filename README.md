@@ -1,4 +1,4 @@
-<h1 align="center">Quiz Tools 📝</h1>
+<h1 align="center">HackTools 📝</h1>
 
 <h3 align="center">
   Projeto criado com a finalidade de participar do processo seletivo da 
