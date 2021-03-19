@@ -1,0 +1,59 @@
+body {
+  overflow: scroll !important;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  width: 420px;
+}
+
+.questions label {
+  margin-bottom: 4px;
+  align-self: baseline;
+}
+
+.questions input {
+  margin: 4px 0 6px;
+  padding: 6px 6px;
+}
+
+#form-quiz {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 3rem 0 5rem;
+  border-radius: 8px;
+  background: #31004c;
+  color: #fff;
+  font-weight: 500;
+  align-items: center;
+  position: relative;
+}
+
+@media(max-width: 460px) {
+  #form-quiz {
+    width: 380px;
+    padding: 1rem .5rem 5rem;
+  }
+
+  #form-quiz div {
+    width: 360px;
+  }
+}
+
+#save-btn {
+  padding: .75rem 1rem;
+  font-size: 18px;
+  width: 240px;
+  margin: 1rem 0;
+  transition: .5s ease;
+  position: absolute;
+  bottom: 10px;
+}
+
+#save-btn:hover {
+  background-color: rgb(98, 0, 118);
+  color: #fff;
+}

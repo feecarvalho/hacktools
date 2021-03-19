@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../global.style.css">
+  <title>Questionários</title>
+</head>
+<body>
+  <header>
+    <h1>HackTools</h1>
+  </header>
+  <section>
+    <div id="quiz" class="quiz-container">
+      <button id="btn-new-quiz">+</button>
+      <h2>Meus questionários</h2>
+      <ul id="quiz-list">
+      </ul>
+      <span id="quiz-list-message"></span>
+    </div>
+  </section>
+
+  <div id="modal-create-quiz" class="modal">
+    <span onclick="document.getElementById('modal-create-quiz').style.display='none'"
+    class="close" title="Fechar modal">&times;</span>
+
+    <form id="form-create-quiz" class="modal-content animate" method="POST">
+      <div class="container">
+        <label for="title"><b>Título</b></label>
+        <input
+          id="title"
+          type="text"
+          placeholder="Insira o titulo do questionário..."
+          name="title"
+          required="O título do questionário é obrigatório"
+        >
+        <button id="submit-quiz" type="submit">Cadastrar</button>
+        <span id="register-message"></span>
+      </div>
+    </form>
+  </div>
+  <a id="btn-logout" href="../index.html">⚙ Logout</a>
+  <script src="script.js"></script>
+</body>
+</html>

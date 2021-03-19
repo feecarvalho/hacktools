@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../global.style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Configurar Questionário</title>
+</head>
+<body>
+  <header>
+    <h1>HackTools</h1>
+  </header>
+  <section>
+    <h1 id="quiz-title"></h1>
+    <div class="buttons">
+      <button id="add-question">Adicionar perguntas</button>
+      <button id="delete-quiz">Deletar questionário</button>
+    </div>
+    <div class="questions-container">
+      <ul id="questions">
+      </ul>
+      <span id="questions-message"></span>
+    </div>
+    <a class="back-btn" href="../index.html">⮜  Voltar</a>
+  </section>
+
+  <!-- Modal Add Perguntas -->
+  <div id="modal-question" class="modal" method="POST">
+    <span onclick="document.getElementById('modal-question').style.display='none'"
+    class="close" title="Fechar modal">&times;</span>
+
+    <form id="form-question" class="modal-content animate">
+      <div class="container">
+        <label for="question"><b>Pergunta:</b></label>
+        <input id="question" type="text" placeholder="Insira uma nova pergunta..." name="question" required>
+        <button id="submit-question" type="submit">Adicionar</button>
+        <span id="register-message"></span>
+      </div>
+    </form>
+  </div>
+
+  <!-- Modal mostrar pergunta -->
+  <div id="modal-show-question" class="modal" method="POST">
+    <span onclick="document.getElementById('modal-show-question').style.display='none'"
+    class="close" title="Fechar modal">&times;</span>
+
+    <div id="form-answer" class="modal-content animate">
+      <div class="container">
+        <span id="question-title"><b></b></span>
+        <span><b>Respostas:</b></span>
+        <ul id="respostas">
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
