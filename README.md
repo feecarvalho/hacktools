@@ -30,10 +30,6 @@ Após iniciado a seguinte mensagem aparecerá no console:
 ```
 [✓] Server rodando na porta 3333.
 ```
-
-Em seguida, abrir o aquivo <b>index.html</b> localizado dentro da pasta <b>frontend</b>
-
-
 <hr>
 <h2 id="banco-dados">📀 Configurando o banco de dados<h2>
 <h3>Após a instalação das dependências, rodar o comando</h3>
@@ -42,7 +38,7 @@ Em seguida, abrir o aquivo <b>index.html</b> localizado dentro da pasta <b>front
 yarn typeorm migration:run
 ```
 <h3>Quando finalizado, a estrutura do banco será criada dentro de um arquivo (database.sqlite) na pasta <b>src/database.</h3>
-
+Em seguida, abrir o aquivo <b>index.html</b> localizado dentro da pasta <b>frontend</b>
 <hr>
 <h2 id="tecnologias">💻 Tecnologias utilizadas<h2>
 
